@@ -1,0 +1,61 @@
+﻿<Window x:Class="TeddyMicrosoftWayWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tiger Control Panel" Height="700" Width="1200" FontFamily="Calibri" FontSize="14"
+        WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None" ShowInTaskbar="True"
+        Style="{DynamicResource MainWinStyle}" Icon="images/Tiger-128.png">
+    <Border Width="auto" CornerRadius="15" BorderThickness="1" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+        <Border.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF92BB76" Offset="1"/>
+                <GradientStop Color="#FF107C0F"/>
+            </LinearGradientBrush>
+        </Border.Background>
+        <Canvas>
+            <Button x:Name="RecordBtn" Style="{DynamicResource RecordBtn}" Canvas.Left="209" Canvas.Top="92" Width="180" Height="70"/>
+            <Button x:Name="EditBtn" Style="{DynamicResource EditBtn}" Canvas.Left="801" Canvas.Top="92" Width="180" Height="70"/>
+
+            <Menu Height="auto" Width="auto" HorizontalAlignment="Left" FontFamily="Calibri" FontSize="20" Margin="0,10,0,0" Background="{x:Null}" Foreground="White" FontWeight="Bold">
+                <MenuItem Header="FILE" Margin="10,0,0,0">
+                    <MenuItem Header="Open File" Height="auto" Width="auto" Background="#FF8AABC7" BorderBrush="{x:Null}" BorderThickness="0" >
+                        <MenuItem.Icon>
+                            <Image Source ="images/folder_open.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <MenuItem Header="Save File" Height="auto" Width="auto" Background="#FF8AABC7" BorderBrush="{x:Null}" BorderThickness="0">
+                        <MenuItem.Icon>
+                            <Image Source ="images/document_save_as.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Exit" Height="auto" Width="auto" Background="#FF8AABC7" BorderBrush="{x:Null}" BorderThickness="0">
+                        <MenuItem.Icon>
+                            <Image Source ="images/application_exit.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <Rectangle Width="3" Height="15" Fill="White" Margin="-5,0,0,0"></Rectangle>
+                <MenuItem Header="EDIT" Margin="-6,0,0,0"/>
+                <Rectangle Width="3" Height="15" Fill="White" Margin="-5,0,0,0"></Rectangle>
+                <MenuItem Header="HELP" Margin="-6,0,0,0"/>
+                <Rectangle Width="3" Height="15" Fill="White" Margin="-5,0,0,0"></Rectangle>
+                <MenuItem Header="ABOUT" Margin="-6,0,0,0"/>
+            </Menu>
+            <StackPanel Orientation="Horizontal" Canvas.Right="10" Canvas.Top="10">
+                <Button x:Name="MinBtn" Visibility="Visible" Style="{DynamicResource MinBtnStyle}" Click="MinBtn_Click" >
+                    <Image Source="images/minBtn.png"></Image>
+                </Button>
+                <Button x:Name="CloseBtn" Visibility="Visible" Style="{DynamicResource CloseBtnStyle}" Click="CloseBtn_Click" >
+                    <Image Source="images/closeBtn.png"></Image>
+                </Button>
+            </StackPanel>
+            <Border CornerRadius="15"  Canvas.Bottom="50" Canvas.Left="10" Width="1180" Height="440" Background="Black">
+                <Canvas Background="Transparent">
+                    <Canvas Width="550" Height="413" Background="BlanchedAlmond" Canvas.Left="20" Canvas.Top="15"></Canvas>
+                    <Canvas Width="550" Height="413" Background="BlueViolet" Canvas.Top="15" Canvas.Right="20"></Canvas>
+                </Canvas>
+            </Border>
+            <Label Content="Tiger Control Panel" FontFamily="Calibri" FontSize="18" Foreground="White" Canvas.Left="1016" Canvas.Top="656" FontWeight="Bold"></Label>
+        </Canvas>
+    </Border>
+</Window>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4513EF66-1885-4FEB-B017-5363160F32F1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TeddyMicrosoftWayPatterns</RootNamespace>
+    <AssemblyName>TeddyMicrosoftWayPatterns</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client.cs" />
+    <Compile Include="Command\Command.cs" />
+    <Compile Include="Command\ConcreteCommand.cs" />
+    <Compile Include="Command\Invoker.cs" />
+    <Compile Include="Command\Receiver.cs" />
+    <Compile Include="Facade\Facade.cs" />
+    <Compile Include="Facade\SubSystemFour.cs" />
+    <Compile Include="Facade\SubSystemOne.cs" />
+    <Compile Include="Facade\SubSystemThree.cs" />
+    <Compile Include="Facade\SubSystemTwo.cs" />
+    <Compile Include="Factory\AddFactory.cs" />
+    <Compile Include="Factory\DivFactory.cs" />
+    <Compile Include="Factory\IFactory.cs" />
+    <Compile Include="Factory\MulFactory.cs" />
+    <Compile Include="Factory\SubFactory.cs" />
+    <Compile Include="Memento\Caretaker.cs" />
+    <Compile Include="Memento\Memento.cs" />
+    <Compile Include="Memento\Originator.cs" />
+    <Compile Include="Observer\ConcreteObserver.cs" />
+    <Compile Include="Observer\ConcreteSubject.cs" />
+    <Compile Include="Observer\Observer.cs" />
+    <Compile Include="Observer\Subject.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prototype\Resume.cs" />
+    <Compile Include="Prototype\WorkExperience.cs" />
+    <Compile Include="SimpleFactory\Operation.cs" />
+    <Compile Include="SimpleFactory\OperationAdd.cs" />
+    <Compile Include="SimpleFactory\OperationDiv.cs" />
+    <Compile Include="SimpleFactory\OperationFactory.cs" />
+    <Compile Include="SimpleFactory\OperationMul.cs" />
+    <Compile Include="SimpleFactory\OperationSub.cs" />
+    <Compile Include="Singleton\Singleton.cs" />
+    <Compile Include="Singleton\SingletonV2.cs" />
+    <Compile Include="State\ConcreteStateA.cs" />
+    <Compile Include="State\ConcreteStateB.cs" />
+    <Compile Include="State\Context.cs" />
+    <Compile Include="State\State.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Command\Desc.txt" />
+    <Content Include="Facade\Desc.txt" />
+    <Content Include="Factory\Desc.txt" />
+    <Content Include="Memento\Desc.txt" />
+    <Content Include="Observer\Desc.txt" />
+    <Content Include="Prototype\Desc.txt" />
+    <Content Include="SimpleFactory\Desc.txt" />
+    <Content Include="Singleton\Desc.txt" />
+    <Content Include="State\Desc.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

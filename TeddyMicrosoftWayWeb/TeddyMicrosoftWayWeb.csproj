@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{508B0AC6-72CF-46A9-BA3C-633B474887D5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TeddyMicrosoftWayWeb</RootNamespace>
+    <AssemblyName>TeddyMicrosoftWayWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PaperFold\css\buddycloud.css" />
+    <Content Include="PaperFold\css\paperfold.css" />
+    <Content Include="PaperFold\css\style.css" />
+    <Content Include="images\Angry_Birds_background.jpg" />
+    <Content Include="images\back1.jpg" />
+    <Content Include="PaperFold\images\candy.jpg" />
+    <Content Include="images\download.png" />
+    <Content Include="images\galleryIcon1.jpg" />
+    <Content Include="images\galleryIcon2.jpg" />
+    <Content Include="images\galleryIcon3.jpg" />
+    <Content Include="images\galleryIcon4.jpg" />
+    <Content Include="images\galleryIcon5.jpg" />
+    <Content Include="images\galleryIcon6.jpg" />
+    <Content Include="images\galleryIcon7.jpg" />
+    <Content Include="images\galleryIcon8.jpg" />
+    <Content Include="images\grey_wash_wall.png" />
+    <Content Include="images\pinterest.png" />
+    <Content Include="images\sliderThumb.png" />
+    <Content Include="default.aspx" />
+    <Content Include="PaperFold\images\teddy.jpg" />
+    <Content Include="PaperFold\js\html5slider.js" />
+    <Content Include="PaperFold\js\jquery-1.7.1.min.js" />
+    <Content Include="PaperFold\js\modernizr.custom.71147.js" />
+    <Content Include="PaperFold\js\paperfold.js" />
+    <Content Include="PaperFold\js\prefixfree.min.js" />
+    <Content Include="PaperFold\js\ui.js" />
+    <Content Include="PaperFold\PaperFold.html" />
+    <Content Include="Resume\css\fonts\fontawesome-social-webfont.svg" />
+    <Content Include="Resume\css\fonts\fontawesome-webfont.svg" />
+    <Content Include="Resume\css\ie7.css" />
+    <Content Include="Resume\css\ie8.css" />
+    <Content Include="Resume\css\ie9.css" />
+    <Content Include="Resume\css\images\bg.png" />
+    <Content Include="Resume\css\images\ie9\button-active.svg" />
+    <Content Include="Resume\css\images\ie9\button-alt-active.svg" />
+    <Content Include="Resume\css\images\ie9\button-alt.svg" />
+    <Content Include="Resume\css\images\ie9\button.svg" />
+    <Content Include="Resume\css\images\ie9\social-li.svg" />
+    <Content Include="Resume\css\skel-noscript.css" />
+    <Content Include="Resume\css\style-1000px.css" />
+    <Content Include="Resume\css\style-desktop.css" />
+    <Content Include="Resume\css\style-mobile.css" />
+    <Content Include="Resume\css\style.css" />
+    <Content Include="Resume\images\me.png" />
+    <Content Include="Resume\js\config.js" />
+    <Content Include="Resume\js\html5shiv.js" />
+    <Content Include="Resume\js\jquery-1.9.1.min.js" />
+    <Content Include="Resume\js\skel.min.js" />
+    <Content Include="Resume\Resume.html" />
+    <Content Include="Script\jquery-1.9.0.min.js" />
+    <Content Include="Script\test.js" />
+    <Content Include="Style\animate.css" />
+    <Content Include="Style\StyleSheet.css" />
+    <Content Include="SwatchBook\css\demo.css" />
+    <Content Include="SwatchBook\css\font\icons.svg" />
+    <Content Include="SwatchBook\css\style.css" />
+    <Content Include="SwatchBook\css\style2.css" />
+    <Content Include="SwatchBook\css\style3.css" />
+    <Content Include="SwatchBook\css\style4.css" />
+    <Content Include="SwatchBook\css\style5.css" />
+    <Content Include="SwatchBook\images\cartboard.jpg" />
+    <Content Include="SwatchBook\images\cover.jpg" />
+    <Content Include="SwatchBook\images\cover2.jpg" />
+    <Content Include="SwatchBook\images\dark_leather.jpg" />
+    <Content Include="SwatchBook\images\egg_shell.jpg" />
+    <Content Include="SwatchBook\images\fabric.png" />
+    <Content Include="SwatchBook\index.html" />
+    <Content Include="SwatchBook\index2.html" />
+    <Content Include="SwatchBook\index3.html" />
+    <Content Include="SwatchBook\index4.html" />
+    <Content Include="SwatchBook\index5.html" />
+    <Content Include="SwatchBook\js\jquery.swatchbook.js" />
+    <Content Include="SwatchBook\js\modernizr.custom.79639.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Style\AUBREY.TTF" />
+    <Content Include="Style\PoetsenOne-Regular.ttf" />
+    <Content Include="Resume\css\fonts\fontawesome-social-webfont.eot" />
+    <Content Include="Resume\css\fonts\fontawesome-social-webfont.ttf" />
+    <Content Include="Resume\css\fonts\fontawesome-social-webfont.woff" />
+    <Content Include="Resume\css\fonts\fontawesome-webfont.eot" />
+    <Content Include="Resume\css\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Resume\css\fonts\fontawesome-webfont.woff" />
+    <Content Include="Resume\css\fonts\FontAwesome.otf" />
+    <Content Include="SwatchBook\css\font\icons.eot" />
+    <Content Include="SwatchBook\css\font\icons.ttf" />
+    <Content Include="SwatchBook\css\font\icons.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>47548</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:47017/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
